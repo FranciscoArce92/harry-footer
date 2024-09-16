@@ -1,58 +1,232 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Harry Footter y el Codigo Filosofal
-      </title>
-      <link rel="stylesheet" href="style.css" />
-      
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Footter y el Codigo Filosofal</title>
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Favicon Link -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/hf-logo.png"
+      type="image/x-icon"
+    />
+  </head>
 
   <body>
-    <!--Diferentes Titulos-->
-    <h1>Harry Footer y su primer titulo H1</h1>
+    <header style="height: 86px;">
+      <nav class="navbar navbar-expand-lg bg-dark-subtle fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/hf-logo.png"
+              alt="Harry Footer Logo"
+              width="60"
+              height="60"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#librosCarousel">Libros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#peliculasCarousel">Películas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <h2>Yo soy un titulo con H2</h2>
-    <h3>Subtitulo con H3</h3>
-    <h4>Subtitulo con H4</h4>
-    <h5>Subtitulo con H5</h5>
-    <h6>Subtitulo con H6</h6>
+    </header>
 
-    <!--Parrafos-->
-    <p>
-      Parrrafo   ...En Privet Drive nunca se había visto un hombre así. Era alto, delgado y
-      muy anciano, a juzgar por su pelo y barba plateados, tan largos que podría
-      sujetarlos con el cinturón. Llevaba una túnica larga, una capa color
-      púrpura que barría el suelo y botas con tacón alto y hebillas. Sus ojos
-      azules eran claros, brillantes y centelleaban detrás de unas gafas de
-      cristales de media luna. Tenía una nariz muy larga y torcida, como si se
-      la hubiera fracturado alguna vez. El nombre de aquel hombre era Albus
-      Dumbledore.
-    </p>
+    <main style="height: 100vh;">
+      
+      <div class="container pt-4 text-center">
+        <h1>Harry Potter - Wizarding World</h1>
+        <p class="fw-semibold fs-4">
+          Harry Potter es una saga de fantasía escrita por la autora británica J.K.
+          Rowling. La serie narra las aventuras del joven mago Harry Potter y sus
+          amigos Hermione Granger y Ron Weasley, quienes son estudiantes del
+          Colegio Hogwarts de Magia y Hechicería. La historia gira en torno a la
+          lucha de Harry contra el oscuro mago Lord Voldemort, quien quiere
+          conquistar el mundo mágico y destruir a aquellos que se interpongan en
+          su camino.
+        </p>
+      </div>
 
-    <!--Listas-->
-    <ul>
-      <h5>Lista sin orden</h5>
-      <li>HARRY POTTER</li>
-      <li>HERMIONE GRANGER</li>
-      <li>RONALD WEASLEY</li>
-    </ul>
-    <ol>
-      <h5>Lista con Orden</h5>
-      <li>HARRY POTTER</li>
-      <li>HERMIONE GRANGER</li>
-      <li>RONALD WEASLEY</li>
-    </ol>
+      <hr>
 
-    <!--Imagenes-->
-    <img
-      src="https://www.gifss.com/comics/harry_potter/images/harry-potter.gif"
-      alt=""
-    />
+      <section id="librosCarousel" class="w-100 text-center pt-4">
+        <h2 class="pb-3">Libros de Harry Potter</h2>
+        <div id="carouselExampleCaptions" class="carousel slide mx-auto" style="width: 50%;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/libro-harry-1.jpeg" class="d-block w-100" height="850px" alt="Libro Harry Potter y la piedra filosofal">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5">
+                <h5>Harry Potter y la piedra Filosofal</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/libro-harry-2.jpg" class="d-block w-100" height="850px" alt="Libro Harry Potter y la cámara secreta">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5">
+                <h5>Harry Potter y la cámara secreta</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/libro-harry-3.jpg" class="d-block w-100" height="850px" alt="Libro Harry Potter y el prisionero de Azkaban">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y el prisionero de Azkaban</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/libro-harry-4.jpg" class="d-block w-100" height="850px" alt="Libro Harry Potter y el cáliz de fuego">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y el cáliz de fuego</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/libro-harry-5.jpg" class="d-block w-100" height="850px" alt="Libro Harry Potter y la Orden del Fénix">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y la Orden del Fénix</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/libro-harry-6.jpg" class="d-block w-100" height="850px" alt="Libro Harry Potter y el Misterio del Príncipe">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y el Misterio del Príncipe</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/libro-harry-7.jpg" class="d-block w-100" height="850px" alt="Libro Harry Potter y las Reliquias de la Muerte">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y las Reliquias de la Muerte</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
 
-    <p>
-      <!--link-->
-      <a href="https://www.youtube.com/watch?v=EsfZiZwhw68"> Harry bailando</a>
-    </p>
+      <hr>
+
+      <section id="peliculasCarousel" class="w-100 text-center pt-4">
+        <h2 class="pb-3">Películas de Harry Potter</h2>
+        <div id="carouselExampleCaptions2" class="carousel slide mx-auto" style="width: 50%;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/pelicula-harry-1.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y la piedra filosofal">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5">
+                <h5>Harry Potter y la piedra Filosofal</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/pelicula-harry-2.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y la cámara secreta">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5">
+                <h5>Harry Potter y la cámara secreta</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/pelicula-harry-3.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y el prisionero de Azkaban">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y el prisionero de Azkaban</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/pelicula-harry-4.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y el cáliz de fuego">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y el cáliz de fuego</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/pelicula-harry-5.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y la Orden del Fénix">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y la Orden del Fénix</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/pelicula-harry-6.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y el Misterio del Príncipe">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y el Misterio del Príncipe</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/pelicula-harry-7.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y las Reliquias de la Muerte Parte 1">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y las Reliquias de la Muerte Parte 1</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/pelicula-harry-8.jpg" class="d-block w-100" height="850px" alt="Película Harry Potter y las Reliquias de la Muerte Parte 2">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-gradient" style="--bs-bg-opacity: .5" >
+                <h5>Harry Potter y las Reliquias de la Muerte Parte 2</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>      
+    </main>
+    <!-- Bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
